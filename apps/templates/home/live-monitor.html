@@ -1,0 +1,299 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 直播监测 {% endblock %} 
+
+<!-- Element injected in the BODY element -->
+{% block body_class %} {% endblock body_class %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href="/static/assets/plugins/ekko-lightbox/ekko-lightbox.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/assets/css/adminlte.min.css">
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>直播监测</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">主页</a></li>
+              <li class="breadcrumb-item active">直播监测</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title">监测任务队列</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 1 - white" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 2 - black" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 3 - red" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 4 - red" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 5 - black" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 6 - white" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 7 - white" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="white sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 8 - black" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="black sample"/>
+                    </a>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/static/assets/img/baiyunshan.png" data-toggle="lightbox" data-title="sample 9 - red" data-gallery="gallery">
+                      <img src="/static/assets/img/baiyunshan.png" class="img-fluid mb-2" alt="red sample"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-warning">
+                    <div class="card-header">
+                      <h3 class="card-title">General Elements</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <form>
+                        <!-- input states -->
+                        <div class="form-group">
+                          <label class="col-form-label" for="inputSuccess"> 输入直播链接 </label>
+                          <input type="text" class="form-control" id="inputSuccess" placeholder="输入 ...">
+                        </div>
+                              
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- select -->
+                            <div class="form-group">
+                              <label>选择平台</label>
+                              <select class="form-control">
+                                <option>抖音</option>
+                                <option>淘宝</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h4 class="card-title">当前监测任务</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <img class="img-fluid" src="/static/assets/img/baiyunshan.png" alt="Photo">
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-12 callout callout-info">
+                                <h5>语音分析</h5>
+                                <p>Follow the steps to continue to payment.</p>
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                          <div class="row">
+                            <div class="col-12 callout callout-info">
+                                <h5>图像识别</h5>
+                                <p>Follow the steps to continue to payment.</p>
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                          <div class="row">
+                            <div class="col-12 callout callout-info">
+                                <h5>违规列表</h5>
+                                <div class="card">
+                                    <!-- /.card-header -->
+                                    <div class="card-body p-0">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>违规类型</th>
+                                            <th>违规词句</th>
+                                            <th>违规证据</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                          <div class="row">
+                            <div class="col-12 callout callout-info">
+                                <h5>变体词列表</h5>
+                                <div class="card">
+                                    <!-- /.card-header -->
+                                    <div class="card-body p-0">
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>变体词类型</th>
+                                            <th>变体词原词</th>
+                                            <th>变体词</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4.</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                            <td>测试</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                              </div>
+                          </div>
+                          <!-- /.row -->
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                      <!-- /.row -->
+                </div>
+              </div>
+            </div>
+          </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <!-- jQuery -->
+  <script src="/static/assets/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="/static/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="/static/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Ekko Lightbox -->
+  <script src="/static/assets/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="/static/assets/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="/static/assets/js/demo.js"></script>
+  <!-- Filterizr-->
+  <script src="/static/assets/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+
+{% endblock javascripts %}
